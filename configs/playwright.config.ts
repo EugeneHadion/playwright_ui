@@ -14,7 +14,7 @@ export default defineConfig({
     globalSetup: '../hooks/globalSetup.ts',
     globalTeardown: '../hooks/globalTeardown.ts',
     use: {
-        baseURL: process.env.BASE_URL,
+        baseURL: "https://www.saucedemo.com",
         screenshot: process.env.CI ? 'only-on-failure' : 'on',
         video: process.env.CI ? 'retain-on-failure' : 'on',
         trace: process.env.CI ? 'retain-on-failure' : 'on',

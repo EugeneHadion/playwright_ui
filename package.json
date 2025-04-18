@@ -1,0 +1,27 @@
+{
+  "name": "softonix",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "tests": "playwright test -c configs/playwright.config.ts",
+    "tests:headed": "playwright test -c configs/playwright.config.ts --headed",
+    "tests:config:chromium": "playwright test -c configs/playwright.chromium.config.ts",
+    "tests:list": "playwright test -c configs/playwright.config.ts --list",
+    "tests:project": "playwright test -c configs/playwright.config.ts --project firefox",
+    "tests:spec": "playwright test -c configs/playwright.config.ts moreExamples",
+    "report:html:show": "playwright show-report reports/html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.51.1",
+    "@types/node": "^22.14.1"
+  },
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}

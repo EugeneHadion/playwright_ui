@@ -34,7 +34,7 @@ jobs:
 
       - name: Save Report
         run: |
-          git add ./reports/html
+          git add -f ./reports/html
           git commit -m "[skip ci] add report"
           git pull
           git push

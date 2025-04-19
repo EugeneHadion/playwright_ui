@@ -10,7 +10,7 @@
         "sourceMap": true,
         "strictNullChecks": false,
         "moduleResolution": "Node",
-        "baseUrl": "https://www.saucedemo.com",
+        "baseUrl": "./",
         "paths": {
             "@helpers/*": ["helpers/*"],
             "@pages/*": ["pages/*"],

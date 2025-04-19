@@ -12,14 +12,6 @@ jobs:
     name: Run Tests on Ubuntu
     runs-on: ubuntu-latest
 
-    env:
-      BASE_URL: ${{ secrets.BASE_URL }}
-      LOGIN_STANDART_USER: ${{ secrets.LOGIN_STANDART_USER }}
-      LOGIN_PASSWORD: ${{ secrets.LOGIN_PASSWORD }}
-      LOGIN_PASSWORD_INVALID: ${{ secrets.LOGIN_PASSWORD_INVALID }}
-
-
-
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3

@@ -12,6 +12,7 @@
         "moduleResolution": "Node",
         "baseUrl": "./",
         "paths": {
+            "@configs/*": ["configs/*"],
             "@helpers/*": ["helpers/*"],
             "@pages/*": ["pages/*"],
             "@api/*": ["api/*"],

@@ -34,6 +34,8 @@ jobs:
 
       - name: Save Report
         run: |
+          git config user.name "ReportSaver"
+          git config user.email "gadionevgeniy@mail.com"
           git add -f ./reports/html
           git commit -m "[skip ci] add report"
           git pull

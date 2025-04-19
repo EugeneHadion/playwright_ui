@@ -24,7 +24,7 @@ export default defineConfig({
     projects: [
         {
             name: "chromium",
-            use: { ...devices["Desktop Chrome"], viewport: { width: 1920, height: 1080 }, baseURL: "https://www.saucedemo.com" },
+            use: { ...devices["Desktop Chrome"], viewport: { width: 1920, height: 1080 } },
         },
         // {
         //     name: 'firefox',

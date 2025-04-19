@@ -1,8 +1,8 @@
-import { defineConfig, devices } from '@playwright/test';
-require('dotenv').config();
+import { defineConfig, devices } from "@playwright/test";
+require("dotenv").config();
 
 export default defineConfig({
-    testDir: '../tests',
+    testDir: "../tests",
     globalTimeout: 60 * 60 * 1000,
     timeout: 2 * 60 * 1000,
     expect: { timeout: 5_000 },
@@ -10,21 +10,21 @@ export default defineConfig({
     forbidOnly: !!process.env.CI,
     retries: process.env.CI ? 1 : 0,
     workers: process.env.CI ? 5 : 5,
-    reporter: [['html', { open: 'never', outputFolder: '../reports/html' }], [process.env.CI ? 'dot' : 'list'], ['github']],
-    globalSetup: '../hooks/globalSetup.ts',
-    globalTeardown: '../hooks/globalTeardown.ts',
+    reporter: [["html", { open: "never", outputFolder: "../reports/html" }], [process.env.CI ? "dot" : "list"], ["github"]],
+    globalSetup: "../hooks/globalSetup.ts",
+    globalTeardown: "../hooks/globalTeardown.ts",
     use: {
-        baseURL: process.env.BASE_URL || 'https://www.saucedemo.com',
-        screenshot: process.env.CI ? 'only-on-failure' : 'on',
-        video: process.env.CI ? 'retain-on-failure' : 'on',
-        trace: process.env.CI ? 'retain-on-failure' : 'on',
+        baseURL: "https://www.saucedemo.com",
+        screenshot: process.env.CI ? "only-on-failure" : "on",
+        video: process.env.CI ? "retain-on-failure" : "on",
+        trace: process.env.CI ? "retain-on-failure" : "on",
         actionTimeout: 10 * 1000,
         navigationTimeout: 10 * 1000,
     },
     projects: [
         {
-            name: 'chromium',
-            use: { ...devices['Desktop Chrome'], viewport: { width: 1920, height: 1080 }, baseURL: "https://www.saucedemo.com", },
+            name: "chromium",
+            use: { ...devices["Desktop Chrome"], viewport: { width: 1920, height: 1080 }, baseURL: "https://www.saucedemo.com" },
         },
         // {
         //     name: 'firefox',

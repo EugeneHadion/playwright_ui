@@ -32,7 +32,7 @@ jobs:
       - name: Run Playwright Tests
         run: npx playwright test --config=configs/playwright.config.ts
 
-      - name: Run Playwright Tests
+      - name: Save Report
         run: |
           git add ./reports/html
           git commit -m "[skip ci] add report"

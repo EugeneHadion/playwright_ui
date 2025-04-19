@@ -1,5 +1,5 @@
-import { expect, test } from "@fixtures/fixtures";
-import { generateRandomNumber, generateRandomString } from "helper/random_generator.helper";
+import { expect, test } from "../fixtures/fixtures";
+import { generateRandomNumber, generateRandomString } from "../helper/random_generator.helper";
 
 test.describe("Complete Flow for Purchasing", () => {
     test("Complete Flow for Purchasing", { tag: "@005" }, async ({ loginPage, inventoryPage, cartPage, checkoutStepOnePage, checkoutStepTwoPage, checkoutCompletePage }) => {

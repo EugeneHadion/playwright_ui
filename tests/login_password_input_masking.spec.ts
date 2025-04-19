@@ -1,5 +1,4 @@
-import { expect, test } from '@fixtures/fixtures';
-import { errorInvalidCredentials } from '@constants/errors.constants.json';
+import { expect, test } from '../fixtures/fixtures';
 
 test.describe('Error Message for Invalid Credentials', { tag: '@003' }, () => {
     test('Login with invalid credentials', async ({loginPage }) => {

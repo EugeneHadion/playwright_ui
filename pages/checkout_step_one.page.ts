@@ -1,5 +1,5 @@
-import { Locator, Page } from '@fixtures/fixtures';
-import { checkoutStepOne } from '@constants/endpoints.constants.json';
+import { Locator, Page } from '../fixtures/fixtures';
+import { checkoutStepOne } from '../constants/endpoints.constants.json';
 import BasePage from './base.page';
 
 export default class CheckoutStepOnePage extends BasePage {

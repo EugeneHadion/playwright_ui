@@ -1,4 +1,4 @@
-import { Page } from '@fixtures/fixtures';
+import { Page } from '../fixtures/fixtures';
 
 export default class BasePage {
     public page: Page;

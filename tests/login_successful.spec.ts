@@ -1,4 +1,4 @@
-import { expect, test } from '@fixtures/fixtures';
+import { expect, test } from '../fixtures/fixtures';
 
 test.describe('Login', () => {
     test('Successful Login with Valid Credentials', { tag: '@001' }, async ({loginPage, inventoryPage }) => {

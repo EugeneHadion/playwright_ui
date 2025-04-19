@@ -1,11 +1,11 @@
 import { test as base } from '@playwright/test';
 
-import LoginPage from '@pages/login.page';
-import InventoryPage from '@pages/inventory.page';
-import CartPage from '@pages/cart.page';
-import CheckoutStepOnePage from '@pages/checkout_step_one.page';
-import CheckoutStepTwoPage from '@pages/checkout_step_two.page';
-import CheckoutCompletePage from '@pages/checkout_complete.page';
+import LoginPage from '../pages/login.page';
+import InventoryPage from '../pages/inventory.page';
+import CartPage from '../pages/cart.page';
+import CheckoutStepOnePage from '../pages/checkout_step_one.page';
+import CheckoutStepTwoPage from '../pages/checkout_step_two.page';
+import CheckoutCompletePage from '../pages/checkout_complete.page';
 
 export const test = base.extend<{
     loginPage: LoginPage;
